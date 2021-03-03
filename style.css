@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap);
+
+* {
+  font-family: sora;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(https://image.freepik.com/free-vector/spot-lights-background_52683-42503.jpg) no-repeat;
+  /* background-repeat: ;*/
+  background-size: cover; 
+  margin-top: 350px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.section__form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 0 auto;
+  height: 300px;
+  text-align: center;
+}
+
+.section__header-headline {
+  text-align: center;
+  color:rgb(0, 0, 0);
+  text-shadow: #fff -1px -1px 10px;
+  font-size: 40px;
+}
+
+.section__form-fieldset {
+  padding: 30px;
+}
+
+.section__form-email, .section__form-password, .section__form-gender, .section__form-gender {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section__form-password {
+  margin-top: 10px;
+}
+
+.section__header-headline {
+  text-align: center;
+  color:rgb(0, 0, 0);
+  text-shadow: #fff -1px -1px 10px;
+  font-size: 40px;
+}
+
+.section__form-gender > span {
+  font-size: 12px;
+}
+
+.section__form-gender {
+  margin-top: 10px;
+}
+
+.section__form-submit > span {
+  float: right;
+  border-radius: 7px;
+  padding:3px 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: rgb(157,142,164);
+  background: radial-gradient(circle, rgba(157,142,164,1) 0%, rgba(57,50,59,1) 100%);
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  transition: .5s;
+  margin-top: 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+a:hover {
+  background: rgb(83,61,93);
+  background: radial-gradient(circle, rgba(83,61,93,1) 0%, rgba(211,199,215,1) 100%);
+}
+
+input[type=email], input[type=password] {
+  border-radius: 7px;
+  padding: 3px 10px;
+}
+
+.section__modal-processing, .section__modal-emptyForm, .section__modal-succeed {
+  position: absolute; 
+  width: 300px;
+  height: 150px;
+  top: 25%;
+  left: 50%;
+  background-color:  #5e5b65;
+  border: 5px solid #8e93a7;
+  transform: translate(-50%, -50%); 
+  font-size: 25px;
+  color: #fff;
+  line-height: 150px;
+  text-align: center;
+  border-radius: 15px;
+  opacity: 0.5;
+
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 1s ease-out 0s;
+}
+
+.shown {
+  opacity: 1;
+  visibility: visible;
+  transition: all 3s ease-out 1.5s;
+}
+
+#close {
+  position: absolute;
+  top: -38%;
+  right:2%;
+  cursor: pointer;
+}

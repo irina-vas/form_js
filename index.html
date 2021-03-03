@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<head>
+  <title>Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+  <section class="section">
+    <form class="section__form">
+      <div class="section__header">
+        <h2 class="section__header-headline">Registration form</h2>
+      </div>
+      <fieldset class="section__form-fieldset">
+        <div class="section__form-email">
+          <label for="email">Enter your e-mail</label>
+          <input type="email" placeholder="your email" id="email">
+        </div>
+        <div class="section__form-password">
+          <label for="password">Enter your password</label>
+          <input type="password" placeholder="your password" id="password">
+        </div>
+        <div class="section__form-gender">
+          <div class="section__form-radioLabel">
+            <label for="radioButton">Choose your gender</label>
+          </div>
+          <div class="section__form-radio">
+            <input type="radio" name="gender" value="male" id="radioMale"><span>Male</span>
+            <input type="radio" name="gender" value="female" id="radioFemale" checked><span>Female</span>
+          </div>
+        </div>
+        <div class="section__form-submit">
+          <span>Send</span>
+        </div>
+        <div class="section__form-submit">
+        </div>
+      </fieldset> 
+    </form>
+    <div class="section__modal-processing hidden">
+      <p class="section__modal-text">Data processing...</p>
+    </div>
+    <div class="section__modal-emptyForm hidden">
+      <p class="section__modal-text">Fill the form please<span class="section__modal-close" id="close">&times;</span></p>
+    </div>
+    <div class="section__modal-succeed hidden">
+      <p class="section__modal-text">Success</p>
+    </div>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>
